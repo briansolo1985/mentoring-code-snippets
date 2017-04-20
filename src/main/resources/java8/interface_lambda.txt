@@ -1,0 +1,9 @@
+Old style
+Arrays.sort(testStrings, new Comparator<String>() {
+  @Override
+    public int compare(String s1, String s2) {
+      return(s1.length() - s2.length());
+    }
+  });
+New style
+  Arrays.sort(testStrings, (s1, s2) -> s1.length() - s2.length());
